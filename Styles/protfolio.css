@@ -44,8 +44,17 @@ nav li a{
     font-size: 20px;
     
 }
-
 .btn{
+    color: #FFFFFF;
+    background-color:#FD6E0A;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    padding: 18px 35px;
+    border-radius: 5px; 
+}
+
+.btn-primary{
     color: #FFFFFF;
     background-color:#FD6E0A;
     font-size: 20px;
@@ -182,4 +191,49 @@ footer input[type="text"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    nav,
+    nav > ul,
+    .skills-container,
+     .resume-container, 
+     footer,
+     .about-items,
+     .benner {
+        flex-direction: column;
+    }
+    nav > ul {
+        gap: 20px;    
+    }
+    nav ul li{
+        margin: 0;
+    }
+    .one{
+    height: 80px;
+    width: 150px;
+    }
+.btn-primary{
+   margin-bottom: 10px;
+}
+    footer, .about{
+        padding: 20px;
+    }
+    .benner{
+        margin: 20px;
+    }
+    .benner-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer textarea{
+        width: calc(100% - 40px);
+    }
 }
